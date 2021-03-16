@@ -11,15 +11,20 @@
 
 	<h1>Změna tříd, události</h1>
 
-	<div class="ctverecek zluty"></div>
+	<p onmouseover="naKlikTucne()"; onmouseout="priOdchodu()">V elipse spí lev.</p>
+	<button class="cerveny" onclick="zcervena()"; onmouseout="zcerna()">Červený po kliknutí.</button>
+	<button class="vetsi" onclick="vetsiOPixel()";>Větší po kliknutí.</button>
+	
+	<div class="audio">Audio ovladač</div>
+	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
-	<div class="ctverecek zeleny"></div>
+	<button onclick="prehraj('#js-audio')">Přehraj</button>
+	<button onclick="zastav('#js-audio')">Zastav</button>
+	<button onclick="ztisit('#js-audio')">Ztišit</button>
+	<button onclick="stredniHlasitost('#js-audio')">Střední hlasitost</button>
+	<button onclick="maxHlasitost('#js-audio')">Max hlasitost</button>
+	<button onclick="zpatkyNaZacatek('#js-audio')">Zpátky na začátek</button>
 
-	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
-
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
-
+	<script src="main.js"></script>
 </body>
 </html>
