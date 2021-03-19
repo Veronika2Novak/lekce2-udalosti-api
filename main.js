@@ -39,24 +39,25 @@ function zastav() {
 //Funkce, která písničku ztiší
 function ztisit() {
     let audioElement = document.querySelector('#js-audio');
-    audioElement.volume()=0.1;
+    audioElement.volume = 0.1;
 }
 
 //Funkce, která písničku dát na akorát hlasitost
 function stredniHlasitost() {
     let audioElement = document.querySelector('#js-audio');
-    audioElement.volume()=0.5;
+    audioElement.volume = 0.5;
 }
 
 //Funkce, která písničku dát na maximální hlasitost
 function maxHlasitost() {
     let audioElement = document.querySelector('#js-audio');
-    audioElement.volume()=1;
+    audioElement.volume = 1;
 }
 
 //Funkce, která písničku vrátí na začátek
 function zpatkyNaZacatek() {
     let audioElement = document.querySelector('#js-audio');
-    audioElement.loop();
+    audioElement.currentTime = 0;
+    audioElement.play();
 }
 
